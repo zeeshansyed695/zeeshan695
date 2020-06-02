@@ -34,8 +34,8 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: installing surge
-      run: npn install --global surge
+      run: npm install --global surge
     - name: deploying using surge
-      run:  surge ./zeeshan695.surge.sh/ --token ${{secrets.surge_token}}
+      run:  surge ./zeeshan695.surge.sh --token ${{secrets.surge_token}}
         echo Add other actions to build,
         echo test, and deploy your project.
